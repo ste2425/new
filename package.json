@@ -1,6 +1,6 @@
 {
   "name": "electrontest",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,15 +21,18 @@
     "electron-builder": "^19.16.2"
   },
   "dependencies": {
+    "electron-log": "^2.2.7",
     "electron-updater": "^2.7.1"
   },
   "build": {
     "appId": "com.github.iffy.electronupdaterexample",
-    "publish": [{
-      "provider": "github",
-      "owner": "CascadeHR",
-      "repo": "electrontest"
-    }],
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "CascadeHR",
+        "repo": "electrontest"
+      }
+    ],
     "nsis": {
       "perMachine": true
     }
