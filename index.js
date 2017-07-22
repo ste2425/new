@@ -33,6 +33,7 @@ autoUpdater.on('update-available', (info) => {
 app.on('ready', function()  {
     createDefaultWindow();
   autoUpdater.checkForUpdates();
+    dialog.showErrorBox('available', 'lol')
 });
 
 app.on('window-all-closed', () => {
