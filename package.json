@@ -1,0 +1,37 @@
+{
+  "name": "electrontest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CascadeHR/electrontest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CascadeHR/electrontest/issues"
+  },
+  "homepage": "https://github.com/CascadeHR/electrontest#readme",
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "electron-builder": "^19.16.2"
+  },
+  "dependencies": {
+    "electron-updater": "^2.7.1"
+  },
+  "build": {
+    "appId": "com.github.iffy.electronupdaterexample",
+    "publish": [{
+      "provider": "github",
+      "owner": "CascadeHR",
+      "repo": "electrontest"
+    }],
+    "nsis": {
+      "perMachine": true
+    }
+  }
+}
