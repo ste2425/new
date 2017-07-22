@@ -23,7 +23,9 @@ function createDefaultWindow() {
   //}, 5000)
 //})
 
-
+autoUpdater.on('update-not-available', (info) => {
+    dialog.showErrorBox('available', '555')
+})
 
 
 autoUpdater.on('update-available', (info) => {
